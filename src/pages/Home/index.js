@@ -1,22 +1,15 @@
-import React, { useMemo, useState } from "react";
-import {
-    FlatList,
-    Pressable,
-    StyleSheet,
-    Text,
-    TextInput,
-    View,
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
+import React, {useMemo, useState} from "react";
+import {FlatList, Pressable, StyleSheet, Text, TextInput, View,} from "react-native";
+import {Ionicons} from "@expo/vector-icons";
+import {useSafeAreaInsets} from "react-native-safe-area-context";
 
-import { EmptyState, Header } from "../../utils";
-import { useCashbook } from "../../context/CashbookContext";
+import {EmptyState, Header} from "../../utils";
+import {useCashbook} from "../../context/CashbookContext";
 import SummaryCard from "./components/SummaryCard";
 import BookCard from "./components/BookCard";
 import BookFormModal from "./components/BookFormModal";
 
-export default function Home({ navigation }) {
+export default function Home({navigation}) {
     const insets = useSafeAreaInsets();
     const {
         books,
@@ -84,7 +77,7 @@ export default function Home({ navigation }) {
                 ]}
                 ListHeaderComponent={
                     <View style={styles.listHeader}>
-                        <SummaryCard totals={totals} />
+                        <SummaryCard totals={totals}/>
 
                         <View style={styles.searchContainer}>
                             <Ionicons
@@ -122,7 +115,7 @@ export default function Home({ navigation }) {
                         </Text>
                     </View>
                 }
-                renderItem={({ item }) => (
+                renderItem={({item}) => (
                     <BookCard
                         book={item}
                         totals={getBookTotals(item.id)}
@@ -184,7 +177,7 @@ export default function Home({ navigation }) {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#f8fafc",
+        backgroundColor: "#F5F5DC",
     },
 
     settingsButton: {

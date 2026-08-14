@@ -83,6 +83,7 @@ const styles = StyleSheet.create({
     summaryRow: {
         marginTop: 16,
         flexDirection: "row",
+        gap: 12,
     },
 
     summaryItem: {
