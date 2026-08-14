@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Cashbook Clone",
+    "slug": "cashbook-clone",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./public/images/logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./public/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f766e"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": { "supportsTablet": true, "bundleIdentifier": "com.cashbookclone.app" },
+    "android": {
+      "package": "com.cashbookclone.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./public/images/logo.png",
+        "backgroundColor": "#0f766e"
+      }
+    },
+    "web": { "bundler": "metro" }
+  }
+}
